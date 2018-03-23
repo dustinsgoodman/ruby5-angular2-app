@@ -6,13 +6,15 @@ import { ApiService } from './api.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { OrderAddComponent } from './order-add/order-add.component';
 import { CustomerAddComponent } from './customer-add/customer-add.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductAddComponent,
     OrderAddComponent,
-    CustomerAddComponent
+    CustomerAddComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule
