@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ApiService } from './api.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { OrderAddComponent } from './order-add/order-add.component';
+import { CustomerAddComponent } from './customer-add/customer-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductAddComponent,
-    OrderAddComponent
+    OrderAddComponent,
+    CustomerAddComponent
   ],
   imports: [
     BrowserModule
