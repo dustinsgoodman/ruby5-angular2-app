@@ -1,3 +1,4 @@
+# Migration to generate customers model
 class CreateCustomers < ActiveRecord::Migration[5.1]
   def change
     create_table :customers do |t|

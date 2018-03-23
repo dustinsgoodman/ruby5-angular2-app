@@ -1,0 +1,11 @@
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+  Exclude:
+    - bin/**/*
+    - db/schema.rb
+    - Gemfile
+    - Gemfile.lock
+
