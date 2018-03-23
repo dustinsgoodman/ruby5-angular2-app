@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ApiService } from './api.service';
@@ -21,7 +22,45 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     CustomerListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: 'products',
+        component: ProductListComponent
+      },
+      {
+        path: 'orders',
+        component: OrderListComponent
+      },
+      {
+        path: 'customers',
+        component: CustomerListComponent
+      },
+      {
+        path: 'products/add',
+        component: ProductAddComponent
+      },
+      {
+        path: 'products/add/:id',
+        component: ProductAddComponent
+      },
+      {
+        path: 'orders/add',
+        component: OrderAddComponent
+      },
+      {
+        path: 'orders/add/:id',
+        component: OrderAddComponent
+      },
+      {
+        path: 'customers/add',
+        component: CustomerAddComponent
+      },
+      {
+        path: 'customers/add/:id',
+        component: CustomerAddComponent
+      },
+    ])
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
