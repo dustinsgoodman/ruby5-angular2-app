@@ -6,6 +6,7 @@ AllCops:
   Exclude:
     - bin/**/*
     - db/schema.rb
+    - frontend/**/*
     - Gemfile
     - Gemfile.lock
 
